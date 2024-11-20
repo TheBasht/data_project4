@@ -61,9 +61,9 @@ This project provides:
 *  Run the following command to install the required libraries:
 ```bash
 pip install -r requirements.txt
-Set up Spark
-Refer to the Spark Documentation for setup instructions.
 ```
+### **Set up Spark**
+Refer to the [Spark Documentation](https://spark.apache.org/docs/latest/) for setup instructions.
 
 #### Prepare the Dataset
 Place ObesityDataSet.csv in the data directory of the project.
