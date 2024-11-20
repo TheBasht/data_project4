@@ -75,6 +75,7 @@ Open and execute the Jupyter Notebook files:
 jupyter notebook obesity_rf_optimized_01.ipynb
 jupyter notebook obesity_rf_optimized_02.ipynb
 ```
+
 #### View the Results
 Review the analysis, EDA, and predictions presented in the notebooks.
 
@@ -89,38 +90,39 @@ Python Workflow Example:
 
 **from sklearn.ensemble import RandomForestClassifier**
 
-#### Load the dataset
+#### 2. Load the dataset
 data = pd.read_csv('ObesityDataSet.csv')
 
-#### Preprocess the dataset
+#### 3. Preprocess the dataset
 X = data.drop('Obesity', axis=1)
 y = data['Obesity']
 
-#### Train the Random Forest model
+#### 4. Train the Random Forest model
 model = RandomForestClassifier()
 model.fit(X, y)
 
-####Predict using a sample input
+#### 5. Predict using a sample input
 sample_data = [[23, 'Female', 'Normal diet', 'Regular exercise']]
 prediction = model.predict(sample_data)
 print(f'Predicted Obesity Risk Category: {prediction[0]}')
 
+
 ###  Languages and Libraries
+
 **Languages**
 * Python 3.8
+  
 **Libraries**
 * pandas: v1.3.3
 * matplotlib: v3.4.3
 * seaborn: v0.11.2
 * scikit-learn: v0.24.2
 * pyspark: v3.1.2
+  
 **Visualization Tools**
 *Tableau
 
 
 ##  Results
 The optimized Random Forest model achieved high precision and recall rates, making it reliable for predicting obesity risk. Tableau dashboards highlight key trends, such as age and dietary patterns significantly influencing obesity risk.
-
-
-
 This structure ensures the proper formatting of code blocks without affecting the text below them.
