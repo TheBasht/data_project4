@@ -1,15 +1,13 @@
-
-
 # **Obesity Risk Analysis and Prediction**
 
 ## **Introduction**
-This project aims to analyze and predict obesity risk factors using a robust dataset. Leveraging machine learning techniques, including Random Forest optimization, this project uncovers patterns in dietary, physical, and social habits contributing to obesity. The goal is to provide insights and accurate predictions to guide interventions for better health outcomes.
+This project analyzes and predicts obesity risk factors using a robust dataset. Leveraging machine learning techniques, including Random Forest optimization, the project uncovers patterns in dietary, physical, and social habits contributing to obesity. The goal is to provide insights and accurate predictions to guide interventions for better health outcomes.
 
 ---
 
 ## **Project Description**
 This project provides:
-- **Data Analysis**: Detailed exploration and visualization of obesity-related data using Python (pandas and Spark).
+- **Data Analysis**: Exploration and visualization of obesity-related data using Python and Spark.
 - **Machine Learning**: Random Forest models optimized for performance and accuracy.
 - **Interactive Visualizations**: Tableau dashboards for engaging visual summaries.
 - **Predictions**: A model predicting obesity risk based on individual habits and characteristics.
@@ -18,51 +16,38 @@ This project provides:
 
 ## **Dataset**
 
-#### *About the Dataset:*
-This dataset estimates obesity levels in individuals from Mexico, Peru, and Colombia, aged 14 to 61, with diverse eating habits and physical conditions. The data was collected via a web-based survey where anonymous users responded to questions about their habits and lifestyle.
+### **About the Dataset**
+This dataset estimates obesity levels in individuals from **Mexico, Peru, and Colombia**, aged **14 to 61**, with diverse eating habits and physical conditions. The data was collected via a web-based survey where anonymous users answered questions about their habits and lifestyle.
 
-**Key Details**
+#### **Key Details**
 - **File**: [ObesityDataSet.csv](./ObesityDataSet.csv)
-  
-- **Attributes:**
-  
-  - **Eating Habits:**
-  * Frequent consumption of high-caloric food (FAVC)
-  * Frequency of vegetable consumption (FCVC)
-  * Number of main meals (NCP)
-  * Consumption of food between meals (CAEC)
-  * Water consumption (CH20)
-  * Alcohol consumption (CALC)
-  
-  - **Physical Condition:**
-  * Caloric consumption monitoring (SCC)
-  * Physical activity frequency (FAF)
-  * Time spent using technology devices (TUE)
-  * Mode of transportation (MTRANS)
-
-- **Demographics:**
-   * Gender, Age, Height, and Weight.
-     
-- **Target Variable:**
-  * NObesity, categorizing individuals into obesity levels based on BMI:
-  * Underweight: BMI < 18.5
-  * Normal Weight: 18.5 ≤ BMI < 24.9
-  * Overweight: 25.0 ≤ BMI < 29.9
-  * Obesity Type I: 30.0 ≤ BMI < 34.9
-  * Obesity Type II: 35.0 ≤ BMI < 39.9
-  * Obesity Type III: BMI ≥ 40
-  
-- **Format:**
-  * The dataset is in CSV format, containing:
-    * 2111 records
-    * 17 attributes
-  
-- **Applications:**
-The data supports multiple analytical tasks:
-  * Classification
-  * Regression
-  * Segmentation
-  * Association algorithms
+- **Attributes**:
+  - **Eating Habits**:
+    - Frequent consumption of high-caloric food (FAVC)
+    - Frequency of vegetable consumption (FCVC)
+    - Number of main meals (NCP)
+    - Consumption of food between meals (CAEC)
+    - Water consumption (CH20)
+    - Alcohol consumption (CALC)
+  - **Physical Condition**:
+    - Caloric consumption monitoring (SCC)
+    - Physical activity frequency (FAF)
+    - Time spent using technology devices (TUE)
+    - Mode of transportation (MTRANS)
+  - **Demographics**:
+    - Gender, Age, Height, and Weight.
+  - **Target Variable**:
+    - Categorizes individuals into obesity levels based on BMI:
+      - Underweight: BMI < 18.5
+      - Normal Weight: 18.5 ≤ BMI < 24.9
+      - Overweight: 25.0 ≤ BMI < 29.9
+      - Obesity Type I: 30.0 ≤ BMI < 34.9
+      - Obesity Type II: 35.0 ≤ BMI < 39.9
+      - Obesity Type III: BMI ≥ 40
+- **Format**:
+  - CSV format with **2111 records** and **17 attributes**.
+- **Applications**:
+  - Supports tasks like **classification, regression, segmentation**, and **association algorithms**.
 
 ---
 
@@ -94,9 +79,9 @@ The data supports multiple analytical tasks:
 
 ### **Prerequisites**
 To run this project, you will need:
-- **Python**: Version 3.8 or later
-- **Apache Spark**: Installed locally or on a cluster
-- **Tableau**: Tableau Public or Desktop for visualizations
+- **Python** (3.8 or later)
+- **Apache Spark**
+- **Tableau**
 - **Python Libraries**:
   - `pandas`
   - `matplotlib`
@@ -105,7 +90,7 @@ To run this project, you will need:
   - `pyspark`
   - `jupyter`
 
-## **Steps to Install**
+### **Steps to Install**
 
 #### **1. Install Dependencies**
 Run the following commands to install the required libraries:
@@ -121,9 +106,8 @@ pip install jupyter==1.0.0
 #### 2. **Set up Spark**
 Refer to the [Spark Documentation](https://spark.apache.org/docs/latest/) for setup instructions.
 
-
 #### 3. Prepare the Dataset
-Place ObesityDataSet.csv in the project data directory.
+Place *ObesityDataSet.csv* in the project data directory.
 
 #### 4. Run the Notebooks
 Open and execute the Jupyter Notebook files:
@@ -139,11 +123,11 @@ Review the analysis, EDA, and predictions presented in the notebooks.
 #### 6. Explore Visualizations
 Open the Tableau project files included in the repository to explore interactive dashboards.
 
+---
 
+### **Usage Examples:**
 
-## Usage Examples:
-
-### Python Workflow Example:
+**Python Workflow Example:** Here’s an example of how to use the project to load data, preprocess it, and train the Random Forest model.
 
 #### 1. Import dependencies
 ```
@@ -191,6 +175,7 @@ print(f'Predicted Obesity Risk Category: {prediction[0]}')
 **Visualization Tools**
 * Tableau
 
+---
 
 ##  Results
 
@@ -228,3 +213,15 @@ Feature Importance:
 ## **Conclusion**
 With its high accuracy and robust design, the model is an effective tool for predicting obesity levels and identifying key behavioral risk factors. These insights are actionable for interventions targeting improved physical activity and healthier dietary patterns.
 
+---
+
+# **References**
+
+1. Dataset: [Kaggle - Obesity or CVD Risk Classify Regressor Cluster](https://www.kaggle.com/datasets/aravindpcoder/obesity-or-cvd-risk-classifyregressorcluster)  
+   - Title: **"Obesity or CVD Risk Classify Regressor Cluster"**  
+   - Source: Kaggle  
+
+2. Tools Used:
+   - [Python](https://www.python.org/)
+   - [Apache Spark](https://spark.apache.org/)
+   - [Scikit-learn Documentation](https://scikit-learn.org/stable/)
